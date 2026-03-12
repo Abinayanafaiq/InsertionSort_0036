@@ -50,3 +50,21 @@ void insertionsort() { // procedure insertion sort
     }
 }
 
+void display() {
+    cout << endl;
+    cout << "==============================" << endl;
+    cout << "=======Element Array Setelah Diurutkan======" << endl;
+    cout << "==============================" << endl;
+
+    for (int j = 0; j < n; j++) {
+        cout << arr[j] << " ";
+    }
+    cout << endl;
+}
+
+int main() {
+    input();
+    insertionsort();
+    display();
+    system("pause");
+}
